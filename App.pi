@@ -1,0 +1,12 @@
+import streamlit as st
+
+st.set_page_config(page_title="AI Smart", page_icon="🤖", layout="centered")
+
+st.title("🤖 أهلاً بك في AI Smart")
+st.markdown("**اسأل أي سؤال وأنا أجاوبك بالذكاء الاصطناعي!**")
+
+user_input = st.text_input("📝 اكتب سؤالك هنا")
+
+if user_input:
+    st.info("🔍 جاري المعالجة...")
+    st.success("🧠 هذا مجرد نموذج تجريبي. الإجابة الحقيقية ستظهر هنا.")
